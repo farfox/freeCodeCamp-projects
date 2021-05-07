@@ -1,0 +1,125 @@
+main {
+    font-family: "Segoe UI", "Roboto", "Helvetica Nuei", "arial";
+  }
+  .background {
+    border-top: 5px solid;
+    
+  }
+  .background-image {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 460px) {
+    #main {
+      margin: 0;
+    }
+  }
+  
+  .image {
+    position: relative;
+    float: auto;
+    max-width: 224px;
+    max-height: auto;
+    border: 4px solid;
+    padding: 6px;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    padding: 10px;
+    margin: 0;
+    position: relative;
+  }
+  
+  #div-emporer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    max-width: 25%;
+  }
+  
+  #emperor-info {
+    position: absolute;
+    max-width: 38%;
+    left: 30%;
+    border-top: 2px solid;
+    line-height: 1.5em;
+  }
+  #heading {
+    text-align: center;
+  }
+  
+  h1 {
+    padding: 0px 350px 0px 0px;
+    margin: 20px 0px 0px 0px;
+  }
+  
+  #title-caption {
+    padding-bottom: 5px;
+  }
+  
+  #caption {
+    padding: 0px 350px 0px 0px;
+  }
+  #figcaption {
+    max-width: 290px;
+    position: absolute;
+    left: 20%;
+    float: auto;
+    display: none;
+  }
+  
+  #image:hover ~ #figcaption {
+    display: grid;
+  }
+  
+  #title {
+    font-size: 90px;
+    text-shadow: 12px 12px 20px rgba(30 23 23), 4px 4px 4px gray;
+  }
+  
+  #img-caption {
+    padding: 15px;
+  }
+  
+  #tribute-info {
+    font-size: 14px;
+  }
+  
+  #info-intro {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  #list {
+    max-width: 50%;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+    text-align: left;
+  }
+  ul {
+    position: relative;
+  }
+  li {
+    padding-bottom: 16px;
+    float: auto;
+    display: grid;
+  }
+  
+  #tribute-quote, #tribute-author {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: justify;
+    font-style: italic;
+  }
+  #wiki {
+    text-align: center;
+  }

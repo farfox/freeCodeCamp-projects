@@ -1,0 +1,123 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+
+  <div id="title-form">
+    <h1 id="title">Wild Rift Laner's Demographic Survey</h1> <!-- User Story #1 -->
+    <p id="description">Please fill out this form so we can use your data to make money.</p>
+  </div>
+  <div id="main">
+    <form id="survey-form">
+      <!-- User Story #3 -->
+      <!--         Name Section -->
+      <div id="name-section" class="section">
+        <div id="name-field">
+          <label id="name-label" for="name">
+            Summoner's Name</label>
+        </div>
+        <div id="name-input">
+          <input type="text" id="name" class="form-control" placeholder="   Enter your name" required />
+        </div>
+      </div>
+      <!--       Email Section -->
+      <div id="email-section" class="section">
+        <div id="email-field">
+          <label id="email-label" for="email">
+            Domain</label>
+        </div>
+        <div id="email-input">
+          <input type="email" id="email" class="form-control" placeholder="   Enter your Email" required />
+        </div>
+      </div>
+      <!--           Age Section -->
+      <div id="age-section" class="section">
+        <div id="age-field">
+          <label id="number-label" for="number">
+            Time Spent in the Rift</label>
+        </div>
+        <div id="age-input">
+          <input type="number" id="number" placeholder="   Age" min="5" max="110" class="form-control" />
+        </div>
+      </div>
+      <!--           Role section -->
+      <div id="role-section" class="section">
+        <div id="role-text">
+          <label>What role does your Champion fill?</label>
+        </div>
+        <div id="role-field">
+          <select name="role" id="dropdown" class="form-control">
+            <option value="" disabled selected> Select current role</option>
+            <option value="marksman">Marksman</option>
+            <option value="bruiser">Bruiser</option>
+            <option value="tank">Tank</option>
+            <option value="mage">Mage</option>
+            <option value="support">Support</option>
+            <option value="jungler">Jungler</option>
+          </select>
+        </div>
+      </div>
+      <!--           Recommend section -->
+      <div id="recommend-section" class="section">
+        <div id="recommend-text">
+          <label>Are you willing to share a lane with an ally?</label>
+        </div>
+        <div id="radio-yes">
+          <input type="radio" id="definitely" name="role" value="definitely" checked>
+          <label for="definitely">Definitely</label>
+        </div>
+        <div id="radio-maybe">
+          <input type="radio" id="maybe" name="role" value="maybe">
+          <label for="maybe">Maybe</label>
+        </div>
+        <div id="radio-unsure">
+          <input type="radio" id="not sure" name="role" value="not sure">
+          <label for="not sure">Not Sure</label>
+        </div>
+      </div>
+      <!--           Favorite Feature Section -->
+      <div id="feature-section" class="section">
+        <div id="feature-text">
+          <label>Which lane do you prefer to play?</label>
+        </div>
+        <div id="feature-field">
+          <select name="feature" id="feature" class="form-control">
+            <option value="" disabled selected>Select an option</option>
+            <option value="baron">Baron</option>
+            <option value="dragon">Dragon</option>
+            <option value="mid">Mid</option>
+            <option value"jungle">Jungle</option>
+          </select>
+        </div>
+      </div>
+      <!--           Improve Section -->
+      <div id="improve-section" class="section">
+        <div id="improve-text">
+          <p>Where do you think you need to improve?<span class="hint"> (Check all that apply)</span></p>
+        </div>
+        <div id="improve">
+          <input type="checkbox" value="teamplay" id="teamplay"><label for="teamplay"> Team Play</label></input><br>
+          <input type="checkbox" value="ganking" id="ganking"><label for="ganking"> Ganking</label></input><br>
+          <input type="checkbox" value="splitpushing" id="splitpushing"><label for="splitpushing"> Split Pushing</label></input><br>
+          <input type="checkbox" value="vision" id="vision"><label for="vision"> Laying Vision</label></input><br>
+          <input type="checkbox" value="goldmanagement" id="goldmanagement"><label for="goldmanagement"> Gold Management</input><br>
+            <input type="checkbox" value="experience" id="experience"><label for="experience"> Farming Experience</label></input><br>
+            <input type="checkbox" value="videos" id="videos"><label for="videos"> Watching Replays</label></input><br>
+            <input type="checkbox" value="vitals" id="vitals"><label for="vitals"> Health/Mana Management</label></input><br>
+            <input type="checkbox" value="cc" id="cc"><label for="cc"> Crowd Control</label></input><br>
+            <input type="checkbox" value="followrole" id="followrole"><label for="followrole"> Following My Role</label></input><br>
+            <input type="checkbox" value="afk" id="afk"><label for="afk"> Not Going AFK</label></input>
+        </div>
+      </div>
+      <br>
+      <!-- Comments Section -->
+      <div id="comments-section" class="section">
+        <div id="comments-text">
+          <label>How are you feeling about being a Summoner?</label>
+        </div>
+        <div id="comments-field"><textarea id="comments" form="comments" placeholder="Enter your comment here..."></textarea></div>
+        <!-- Submit Button -->
+        <div id="submit-button"><button type="submit" id="submit">Submit</button></div>
+      </div>
+    </form>
+  </div>
+</body>

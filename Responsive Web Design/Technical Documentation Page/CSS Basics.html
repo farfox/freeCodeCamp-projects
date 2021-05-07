@@ -1,0 +1,203 @@
+<div id="test_suite">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </div>
+  
+  <main id="main-doc">
+    <nav id="navbar" class="med">
+      <header>
+        <h1>CSS Basics</h1>
+      </header>
+      <ul>
+        <a class="nav-link" href="#introduction">
+          <li>
+            Introduction
+          </li>
+        </a>
+        <a class="nav-link" href="#definitions">
+          <li>
+            Definitions
+          </li>
+        </a>
+        <a class="nav-link" href="#applying_css">
+          <li>
+            Applying CSS
+          </li>
+        </a>
+        <a class="nav-link" href="#how_it_works">
+          <li>
+            How it Works
+          </li>
+        </a>
+        <a class="nav-link" href="#conclusion">
+          <li>
+            Conclusion
+          </li>
+        </a>
+      </ul>
+    </nav>
+    <section class="main-section" id="introduction">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>
+        <b>C</b>ascading <b>S</b>tyle <b>S</b>heets, commonly CSS, is the language used to style a web page. CSS is simple to understand, but also incredibly powerful in the way it can present an HTML document. In fact, this web page was written using primarily HTML and CSS.
+      </p>
+      <p>
+        The <b>World Wide Web Consortium</b> is the group of people who recommend how the internet works and evolves. A smaller group within known as the <b>CSS Working Group</b> create specifications for CSS.</p>
+      <p>The specification undergoes heavy discussion by the group members and eventually will become a recommendation, as mentioned above, if approved. These recommendations are also known as <i>Web Standards</i>. As a web developer, these standards serve as rules that allow everything to work together. Otherwise, you might end up needing a different browser every time you wanted to view a different web page!
+      </p>
+      <h3>Why use CSS?</h3>
+      <p>CSS controls the style of a web page. A web page can exist without CSS, but it tends to look very basic and dull. With CSS, maintenance on a web page is fast and easy. It allows any part of the page to be styled, whether it's the layout, the color, the size, and much more.</p>
+      <p>
+        CSS is created as it's own document so that the HTML can contain the content and <i>isn't being over run</i> with styling code.
+      </p>
+      <p>This design allows a web designer to open up the stylesheet containing the CSS. They can clearly see each and every declaration block and edit the rule's defined within to make styling changes to the HTML sheet. Since the actual document isn't being altered in any way, it can be edited without fear of breaking the site's main functions.</p>
+      <p>The process is quick and efficient, and offers advanced tools that can be used as a framework for more specific and powerful languages too. Even though it would take a little more than an introduction page to master, CSS is easy enough to understand that many people can figure out how to do it on their own just by looking at the code!</p>
+    </section>
+    <section class="main-section" id="definitions">
+      <header>
+        <h2>Definitions</h2>
+            </header>
+        <p class="credit">Info provided by <a href="https://www.impressivewebs.com/css-terms-definitions/">impressivewebs.com</a></p>
+      <p>CSS has many terms that should be consistent among developers. Not every term applies only to CSS but when writing CSS code, it helps to be familiar with the following:</p>
+      <ul>
+        <li class="term">Comment</li>
+        <p class="meaning">A block of text that is ignored by the browser. It's sole purpose is for the author to read or share messages.</p>
+        <li class="term">Rule Set</li>
+        <p class="meaning">A section of CSS code. It includes the <i>selector</i> and the <i>declaration block</i>. Example:
+        <pre><code>
+          body {
+          font-size: 10px;
+          color: black
+          }
+          </code></pre>
+        </p>
+        <li class="term">Declaration Block</li>
+        <p class="meaning">
+          The text inside the <code>{brackets}</code> that tell the <i>selector</i> what to do.
+        </p>
+        <li class="term">Declaration</li>
+        <p class="meaning">
+          A single line of CSS, when grouped together they form a <i>declaration block.</i>
+        </p>
+        <li class="term">Property</li>
+        <p class="meaning">
+          The attribute of an element that CSS intends to style. It appears before the colon in a <i>declaration</i>.
+        </p>
+        <li class="term">Value</li>
+        <p class="meaning">
+          The styling to apply to a <i>property</i>. It appears after the colon.
+        </p>
+      <li class="term">Selector</li>
+          <p class="meaning">The part of the CSS that selects what element is being targeted. This appears before the <code>{brackets}</code> and uses different symbols to determine what type of element it's looking for.</p>
+          <ul>
+            <li class="term">Element Selector</li>
+            <p class="meaning">
+              This refers directly to an element. It does not contain a symbol. Common <i>element type selectors</i> would include <code>div, nav, a, body</code>, for example.
+            </p>
+            <li class="term">Class Selector</li>
+            <p class="meaning">
+              This targets the element by the assigned class. It generally targets many elements of a related group. It is followed by a <code>.</code> symbol. Example: <code>.navigation, .main-section, .container</code>.
+            </p>
+            <li class="term">ID Selector</li>
+            <p class="meaning">
+              This targets an element by the id given. Unlike the <i>class element selector</i> it mainly targets a unique element. It is followed by the <code>#</code> symbol. Example: <code>#slide001, #header-img, #jumbotron-content</code>.
+            </p>
+            <li class="term">Universal Selector</li>
+            <p class="meaning">
+              Matches any element within the context it's placed in. An <code>*</code> is commonly used. Example: <code>.container p * { width: 100px; }</code> will make any element that descends from the container class's p element have a width of 100px. It can be used as a standalone selector to target the whole document.
+            </p>
+            <li class="term">Attribute Selector</li>
+            <p class="meaning">
+              This selects an element based on an attribute. Example: <code>div[style] {background-color: red};</code> will target any div with the "style" attribute and make the background red. Another example: <code>input[type="text"] {display: none;}</code> will not display any input elements with a type attribute value of "text".
+            </p>
+          </ul>
+        <li class="term">Pseudo-Class</li>
+        <p class="meaning">
+          This is similar to a regular CSS class but it is not declared in the HTML by the developer. It targets a specific element's <i>state</i>. It is always followed by a single colon. <code>:visited, :active, :last-child, :in-range</code> are all examples of a pseudo-class.
+        </p>
+        <li class="term">Pseudo-Element</li>
+        <p class="meaning">
+          A pseudo-element targets a <i>specific part</i> of an element. CSS2 pseudo-elements are followed by a single colon. CSS3 pseudo-elements are followed by a double colon. Example: <code>span:first-line, p::selection</code>.
+        </p>
+        <li class="term">Combinator</li>
+        <p class="meaning">
+          A symbol in a selector that connects two selectors together. The 4 symbols are <code> &gt, +, ~,</code> or a <code>space</code>.
+        </p>
+        <li class="term">At-Rule</li>
+        <p class="meaning">
+          An instruction given that uses the <code>@</code> symbol. It could have a declaration block or a declaration. Example: <code>@media screen and (min-width: 900px;)</code>.
+        </p>
+        <li class="term">Statement</li>
+        <p class="meaning">
+          Any <i>at-rule</i> or rule set.
+        </p>
+        <li class="term">Identifier</li>
+        <p class="meaning">
+          Anything that appears as a property, id, class, keyword value, and at-rule. Example: <code>"body", "none", "font-size"</code>.
+        </p>
+        <li class="term">Keyword</li>
+        <p class="meaning">
+          A value for a property that can change. Example: <code>auto, inherit</code>.
+        </p>
+      </ul>
+    </section>
+    <section class="main-section" id="applying_css">
+      <header>
+        <h2>Applying CSS</h2>
+      </header>
+      <p>There are three methods at applying CSS to HTML. The most common method is to have a separate stylesheet containing your CSS and referencing it in the HTML document.</p>
+      <code>&ltlink rel="stylesheet" href="styles.css"&gt</code>
+      <p>This tells the HTML document that it needs to run the <code>styles.css</code> stylesheet. This will contain your CSS code and resemble this:</p>
+      <code>h1 {<br>
+        color: orange;<br>
+        background-image: linear-gradient(to-left, green, red);<br>
+        font-size: 20px;<br>
+        }<br>
+        .container {<br>
+        height: auto;<br>
+        width: 40%;<br>
+        }</code>
+    </section>
+    <section class="main-section" id="how_it_works">
+      <header>
+        <h2>How it Works</h2>
+            </header>
+        <p class="credit">Info provided by <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works">developer.mozilla.org</a></p>
+      <p>
+        So how does that one line of code tell HTML everything it needs to know to apply the CSS stylesheet? It all is quickly processed by the web browser in a rapid series of stages.
+      </p>
+      <ol>
+        <li>The browser first loads the HTML</li>
+        <li>The HTML is converted into a DOM <i>(Document Object Model).</i> The DOM is a tree structure that make up the parent and child nodes and their relationship to other DOM nodes.</li>
+        <li>The browser fetches all of the external resources that are needed by the HTML document, such as images and videos, and linked CSS.</li>
+        <li>The browser parses the CSS, sorting the rules by their selector types into "buckets". It then works out which rules should be applied to which nodes in the DOM and attaches the style to them. This step is called a <i>render tree</i>.</li>
+        <li>The render tree is laid out in the determined structure after all the rules have been applied.</li>
+        <li>The visual display is then shown on the screen in the <i>painting</i> stage.</li>
+      </ol>
+      <div><img class="how_it_works-diagram" src="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works/rendering.svg" alt></div>
+      <p class="credit">This diagram from <a href="developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works">developer.mozilla.org</a> shows a simple view of the process.</p>
+    </section>
+  <section class="main-section" id="basic_commands">
+    <header>
+      <h2>Basic Commands</h2>
+    </header>
+    <p>The syntax of CSS is as follows:</p>
+    <pre><code>selector(s): {property: value; property: value; ...}</code></pre>
+    <p>This is important to remember as all of your CSS coding is going to follow this format and the following commands will be presented this way.</p>
+    <p>A comment (remember, a note for people), is displayed as text surrounded by <code>/* text */</code></p>
+    <h3>Display</h3>
+    <pre><code>.element {
+    display: none;            /* exiles the element from the page */
+    display: block;           /* the default display style, can not be shared */
+    display: inline;          /* allows the element to sit in a line */
+    display: inline-block;    /* allows elements to sit together in line */
+    }</pre></code></header></section>
+    <section class="main-section" id="conclusion">
+      <header>
+        <h2>Conclusion</h2>
+      </header>
+      <p>
+        As you can see, CSS is a powerful front-end styling tool. It cleanly manages data that's specifically used to present information from an HTML document. The tools offered by CSS are powerful, yet easy to use. Almost every web page you visit will have CSS somewhere and its a valuable language to master as a web developer. It is constantly evolving and has even acquired superset languages to further maximize it's potential. Effectively styling your document with CSS is only a beginning step in what the language can do, yet knowing how to code in CSS is a vital skill for any aspiring web developer to acquire. </p>
+    </section>
+  </main>

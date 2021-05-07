@@ -1,0 +1,110 @@
+html {
+    font-family: 'Open Sans Condensed', sans-serif;
+  scroll-behavior: smooth;
+    color: #202020;
+}
+/* .dark {
+  background-color: #797470;
+} */
+.light, body {
+  background-image: linear-gradient(to right, #FCFCF2, #FFFFF2);
+}
+.med {
+  background-image: linear-gradient(to left, #CECDC6, #CECDB0);
+}
+#navbar {
+/*   background-color: #DADED4; */
+  min-height: 100%;
+  max-height: auto;
+  min-width: 200px;
+  max-width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+#navbar h1 {
+  padding: 8% 0% 0% 5%;
+  font-size: 1.6em;
+}
+#navbar a {
+  color: #202020;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+#navbar a:hover, #navbar a:active, #navbar a:focus {
+  color: #BB3900;
+}
+#navbar a:active, #navbar:focus {
+  font-size: 0.9em;
+  color: #AA2222;
+}
+#navbar li {
+  list-style: none;
+  padding-top: 0.3em;
+  max-width: auto;
+}
+#navbar li:before {
+  content: "\2970 \0020";
+  font-size: 0.9em;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.main-section {
+  margin-left: 210px;
+}
+@media screen and (max-height: 450px) {
+  #navbar {
+    min-width: auto;
+    max-width: auto;
+  }
+#navbar li {
+    padding-right: 10px;
+    font-size: 0.6em;
+  }
+  #navbar h1 {
+    font-size: 0.8em;
+    padding-top: 25px;
+  }
+}
+  p {
+    font-size: 0.9em;
+    min-width: 65%;
+    max-width: 65%;
+    margin-left: 50px;
+}
+.credit {
+  font-size: 0.7em;
+  padding: 0px 80px;
+}
+section ul {
+  list-style: none;
+  line-height: 0.8em;
+}
+.term {
+font-weight: bold;
+  position: relative;
+  right: 30px;
+}
+.meaning {
+  margin-bottom: 15px;
+  border-left: 1px solid;
+  padding-left: 10px;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+code {
+  color: #797470;
+}
+.how_it_works-diagram {
+  min-width: 20%;
+  max-width: 50%;
+  min-height: 20%;
+  max-height: 50%;
+  padding-left: 10%;
+}
+h3 {
+  padding-top: 15px;
+  padding-left: 20px;
+}
