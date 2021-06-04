@@ -97,14 +97,19 @@
         <div id="improve">
           <input type="checkbox" value="teamplay" id="teamplay"><label for="teamplay"> Team Play</label></input><br>
           <input type="checkbox" value="ganking" id="ganking"><label for="ganking"> Ganking</label></input><br>
-          <input type="checkbox" value="splitpushing" id="splitpushing"><label for="splitpushing"> Split Pushing</label></input><br>
+          <input type="checkbox" value="splitpushing" id="splitpushing"><label for="splitpushing"> Split
+            Pushing</label></input><br>
           <input type="checkbox" value="vision" id="vision"><label for="vision"> Laying Vision</label></input><br>
-          <input type="checkbox" value="goldmanagement" id="goldmanagement"><label for="goldmanagement"> Gold Management</input><br>
-            <input type="checkbox" value="experience" id="experience"><label for="experience"> Farming Experience</label></input><br>
+          <input type="checkbox" value="goldmanagement" id="goldmanagement"><label for="goldmanagement"> Gold
+            Management</input><br>
+            <input type="checkbox" value="experience" id="experience"><label for="experience"> Farming
+              Experience</label></input><br>
             <input type="checkbox" value="videos" id="videos"><label for="videos"> Watching Replays</label></input><br>
-            <input type="checkbox" value="vitals" id="vitals"><label for="vitals"> Health/Mana Management</label></input><br>
+            <input type="checkbox" value="vitals" id="vitals"><label for="vitals"> Health/Mana
+              Management</label></input><br>
             <input type="checkbox" value="cc" id="cc"><label for="cc"> Crowd Control</label></input><br>
-            <input type="checkbox" value="followrole" id="followrole"><label for="followrole"> Following My Role</label></input><br>
+            <input type="checkbox" value="followrole" id="followrole"><label for="followrole"> Following My
+              Role</label></input><br>
             <input type="checkbox" value="afk" id="afk"><label for="afk"> Not Going AFK</label></input>
         </div>
       </div>
@@ -114,7 +119,8 @@
         <div id="comments-text">
           <label>How are you feeling about being a Summoner?</label>
         </div>
-        <div id="comments-field"><textarea id="comments" form="comments" placeholder="Enter your comment here..."></textarea></div>
+        <div id="comments-field"><textarea id="comments" form="comments"
+            placeholder="Enter your comment here..."></textarea></div>
         <!-- Submit Button -->
         <div id="submit-button"><button type="submit" id="submit">Submit</button></div>
       </div>

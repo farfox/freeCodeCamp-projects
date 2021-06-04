@@ -1,37 +1,142 @@
 <head>
-<link rel="stylesheet" href="styles.css">
+  <div id="test_suite">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </div>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<nav class="nav justify-content-center" id="navbar">
-  <a class="nav-link active" href="#welcome-section">Welcome</a>
-  <a class="nav-link" href="#about">About Me</a>
-  <a class="nav-link" href="#projects">Projects</a>
-  <a class="nav-link" href="#contacts">Contact</a>
-</nav>
+  <!-- Navbar is fixed -->
+  <nav class="nav" id="navbar">
+    <span id="nav-email">taigenjgraham@gmail.com </span><span id="nav-phone">(509) 701-8787</span>
+    <a class="nav-link active" href="#welcome-section">Welcome</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#projects">Projects</a>
+    <a class="nav-link" href="#contacts-section">Contact</a>
+  </nav>
+
+  <!-- Background for the first section -->
+  <img id="background" src="Hexagon-background.jpg">
+
+  <section class="section" id="welcome-section">
+    <h1>Taigen Graham</h1>
+    <h2>Full-Stack Web Developer</h2>
+    <h3>If you're looking for</h3>
+    <ul>
+      <li>Simple & efficient design</li>
+      <li>Fluid and quick navigation</li>
+      <li>Accessibility friendly</li>
+      <li>Time efficient creation</li>
+      <li>The freedom of creating your own designs</li>
+      <li>Or going with an idea of mine</li>
+    </ul>
+
+    <span id="work-status">You're at the right place.</span>
+  </section>
+  <div class="section-border"></div>
+
+  <section class="section" id="about">
+    <span id="quote">"Pleasure in the job puts perfection in the work" - Aristotle </span>
+    <div id="expectations">
+      <h3>Design Style</h3>
+      <div id="site-description">
+        <p id="yoursite">The websites I design <b>prioritize the user</b>. I focus on accessibility, ease of access, and
+          functionality. Many modern day websites are flashy and difficult to navigate. My goal is for the user to be
+          able to find the information they need quickly and efficiently.</p>
+        <p id="skills">
+          I am certified in HTML, CSS, and Javascript. I have experience working with many other
+          languages as well. I am still ongoing with my studies, but I am eager to get to work. I am able to work
+          remotely.
+        </p>
+      </div>
+    </div>
+    <div class="section-header" id="about-header">
+      <h3>Backstory</h3><img id="selfie" src="selfie.jpg" alt="this is me" />
+      <p>I am 29 years old, crafting web pages from Spokane, Washington. As I grew up I was told I could be anything I
+        wanted, as I'm sure many others were. My grandparents were the ones to first share this famous Aristotle quote
+        with me. I realize more and more each day that they were right more often than I gave them credit for.</p><br>
+      <p>My mom studied web design while I was growing up in the 90's. She would get excited to learn something new and
+        want to share it, so I spent a lot of my childhood learning HTML. In my teens, social media sites became very
+        popular. My knowledge was continued by making sure I created Myspace pages for my friends.</p><br>
+      <p>As a young adult I worked an eclectic variety of jobs. A few examples include caring for dogs at a dog boarding
+        school, arranging flowers at a florist shop, to waiting tables at a retirement community, and eventually
+        becoming a nursing assistant.</p><br>
+      <p>A long story later I left the medical field and fell into owning a fairly successful home remodeling company. I
+        managed a small group of hard working people doing full scale remodels in Spokane for a couple of years. Then
+        the COVID-19 shutdown happened.</p><br>
+      <p>I have always put everything I have into the work I do, yet with each job I'd find myself growing more
+        exhausted of it as time went on. I have come to realize that code, to me, is what his quote is talking about.
+      </p>
+    </div>
+  </section>
 
 
-<section id="welcome-section">
-  <h1>
-Hello! My name's Taigen Graham. If you're on this page, it's likely you may be seeking a web developer. Look no further.
-  </h1>
-  <span>I'm currently proficient with HTML, CSS, Javascript, Bootstrap, and SCSS.</span>
-  <span>Before web design I worked a variety of fields. I was started working at a dog daycare in Bothell, WA. I went on to become a florist, then a cook, a CNA, to owning a home remodeling company. When COVID-19 hit the U.S., work slowed down and I had to get creative. Though I've held many types of jobs, code was always something that I continued to do throughout my life. I started learning HTML as an adolescent and now I'm eager to make a career out of it. </span>
-  <h2>Shown below are some projects I have created</h2>
-</section>
-
-
-<section class="project-tile" id="projects">
-    <div class="tiles" id="tile1"><a href="https://codepen.io/taigen-joseph-graham/full/bGgqjwO">
-        <img src="Tribute Page\Kikuichimonji.png" />
-    </a></div>
-    <div class="tiles" id=tile2"><a href="https://codepen.io/taigen-joseph-graham/full/MWJpdRR">
-    <img src="Responsive Web Design\Survey\Survey.png" />
-    </a></div>
-    <div class="tiles" id="tile3"><a href="https://codepen.io/taigen-joseph-graham/full/vYgZxeV">
-    <img src="Responsive Web Design\Product Landing Page\Switchit.png" />
-  </a></div>
-  <div class="tiles" id="tile4"><a href="https://codepen.io/taigen-joseph-graham/full/poRmYaM">
-  <img src="Responsive Web Design\Technical Documentation\switchit.png" />
-</a></div>
-</section>
+  <section class="section" id="projects">
+    <br><br><br>
+    <span class="floating-section-text" id="projects-text"></span>
+    <h3>
+      You are viewing my <span id="doctitle">Personal Portfolio Project</span>.
+    </h3>
+    <h4>
+      Check out my other projects!
+    </h4>
+    <div class="tiles-container">
+      <div class="project-tile" id="tile1"><a href="https://codepen.io/taigen-joseph-graham/full/bGgqjwO">
+          <img
+            src="https://raw.githubusercontent.com/farfox/freeCodeCamp-projects/master/Responsive%20Web%20Design/Tribute%20Page/Kikuichimonji.png" />
+        </a></div>
+      <div class="project-tile" id="tile2"><a href="https://codepen.io/taigen-joseph-graham/full/MWJpdRR">
+          <img
+            src="https://raw.githubusercontent.com/farfox/freeCodeCamp-projects/master/Responsive%20Web%20Design/Survey/Survey.png" />
+        </a></div>
+      <div class="project-tile" id="tile3"><a href="https://codepen.io/taigen-joseph-graham/full/vYgZxeV">
+          <img
+            src="https://raw.githubusercontent.com/farfox/freeCodeCamp-projects/master/Responsive%20Web%20Design/Product%20Landing%20Page/Switchit.png" />
+        </a></div>
+      <div class="project-tile" id="tile4"><a href="https://codepen.io/taigen-joseph-graham/full/poRmYaM">
+          <img
+            src="https://raw.githubusercontent.com/farfox/freeCodeCamp-projects/master/Responsive%20Web%20Design/Technical%20Documentation%20Page/cssbasics.png" />
+        </a></div>
+    </div>
+    <br>
+  </section>
+  <br>
+  <section class="section" id="contacts-section">
+    <h3>Contact Me</h3>
+    <div class="social-media-links">
+      <div id="contact-box">
+        <a target="_blank" href="tel:509-701-8787">
+          <i class="fa fa-phone" aria-hidden="true" id="phone">
+          </i>
+        </a>
+        <a target="_blank" href="mailto:taigengraham@gmail.com">
+          <i class="fa fa-envelope" aria-hidden="true" id="mail">
+          </i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/farfoxx">
+          <i class="fa fa-facebook-official" aria-hidden="true" id="facebook">
+          </i>
+        </a>
+        <a target="_blank" href="https://github.com/farfox">
+          <i class="fa fa-github" aria-hidden="true" id="github">
+          </i>
+        </a>
+        <a id="profile-link" target="_blank" href="https://www.freecodecamp.org/farfox">
+          <i class="fa fa-free-code-camp" aria-hidden="true" id="freecodecamp">
+          </i>
+        </a>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="contact-text">
+      <p>I am eager to get to work, whether it's a freelance project or signing on with a company. My passion lies in
+        web design.</p>
+      <p>If you think I'd make a good fit for your team or project, I can be reached at any of the links above.</p>
+      <p>I check my email frequently and also respond to text messages.</p>
+      <br>
+      <p>Credit for using the free background photo goes to <a href="https://www.vecteezy.com">Vecteezy</a>.</p>
+      </p>
+    </div>
+  </section>
 </body>
